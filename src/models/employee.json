@@ -1,0 +1,65 @@
+{   
+    "config": {
+        "locale": "en"
+    },
+    "model": {    
+    "type": "Object",
+    "value": {
+            "ID": {    
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "JobTitle": {    
+                "type": "faker",
+                "value": "name.jobTitle"
+            },
+            "EmailAddress": {    
+                "type": "faker",
+                "value": "internet.email"
+            },
+            "Name": {    
+                "type": "faker",
+                "value": "name.findName"
+            },
+            "Country": {    
+                "type": "faker",
+                "value": "address.country"
+            },
+            "SalaryQ1": {    
+                "type": "faker",
+                "value": "random.number"
+            },
+            "SalaryQ2": {    
+                "type": "faker",
+                "value": "random.number"
+            },
+            "SalaryQ3": {    
+                "type": "faker",
+                "value": "random.number"
+            },
+            "SalaryQ4": {    
+                "type": "faker",
+                "value": "random.number"
+            },
+            "WorkingHourQ1": {    
+                "type": "randomNumberBetween",
+                "value": [100, 365]
+            },
+            "WorkingHourQ2": {    
+                "type": "randomNumberBetween",
+                "value": [100, 365]
+            },
+            "WorkingHourQ3": {    
+                "type": "randomNumberBetween",
+                "value": [100, 365]
+            },
+            "WorkingHourQ4": {    
+                "type": "randomNumberBetween",
+                "value": [100, 365]
+            }
+
+        }
+    }
+}
